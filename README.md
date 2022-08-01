@@ -1,5 +1,7 @@
 # &lt;instant-picture&gt; Web Component
-A Web Component for emulating Polaroid and Instax instant pictures.
+A Web Component for rendering Polaroid and Instax instant pictures on the web!
+
+![Different instant pictures](example/banner.png "Different instant pictures")
 
 ***Features***
 * A single javascript module file to include
@@ -9,8 +11,8 @@ A Web Component for emulating Polaroid and Instax instant pictures.
 * Support for the common picture formats `i-type`, `sx-70`, `600`, `go`, `square` and `wide`
 
 ***Two flavors***
-* `69KB` with bundled typeface 
-* `4.5KB` without bundled typeface
+* `~69KB` with bundled typeface 
+* `~4.5KB` without bundled typeface
 
 ## Example
 To load the web component, include a declaration to the javascript module file:
@@ -41,10 +43,10 @@ instant-picture {
     font-family: 'Comic Sans';
 }
 
-/* Target type of instant picture */
+/* Target type attribute of instant picture */
 instant-picture[type=i-type] { }
 
-/* Target if the attribute unstyled is present or not */
+/* Target based on if the unstyled attribute is present or not */
 instant-picture[unstyled] { }
 instant-picture:not([unstyled]) { }
 
