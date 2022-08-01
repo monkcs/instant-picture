@@ -24,8 +24,8 @@ To load the web component, include a declaration to the javascript module file:
 To use the web component, a declaration as the following will produce a Polaroid i-type picture with text underneath the image:
 ```html
 <instant-picture type=i-type>
-    <img src=ballon.webp alt="Hot air ballon">
-    <p slot=text>A ballon in the sky!</p>
+    <img src=balloon.webp alt="Hot air balloon">
+    <p slot=text>A balloon in the sky!</p>
 </instant-picture>
 ```
 Rendering of the `instant-picture`:
