@@ -164,13 +164,13 @@ class InstantPicture extends HTMLElement
 
     set unstyled(value)
     {
-        if (value == false)
+        if (value == true)
         {
-            this.removeAttribute("unstyled");
+            this.setAttribute("unstyled", "");
         }
         else
         {
-            this.setAttribute("unstyled", "");
+            this.removeAttribute("unstyled");
         }
     }
 
