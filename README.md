@@ -1,5 +1,5 @@
 # &lt;instant-picture&gt; Web Component
-A Web Component for rendering Polaroid and Instax instant pictures on the web!
+A Web Component for displaying Polaroid and Instax instant pictures on the web!
 
 ![Different instant pictures](example/banner.png "Different instant pictures")
 
