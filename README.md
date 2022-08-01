@@ -8,7 +8,7 @@ A Web Component for displaying Polaroid and Instax instant pictures on the web!
 * No dependencies
 * No external fetch requests
 * Bundled typeface [Just Another Hand](https://fonts.google.com/specimen/Just+Another+Hand)
-* Support for the common picture formats `i-type`, `sx-70`, `600`, `go`, `square` and `wide`
+* Support for the common picture formats `i-type`, `sx-70`, `600`, `go`, `mini`, `square` and `wide`
 
 ***Two flavors***
 * `~69KB` with bundled typeface 
