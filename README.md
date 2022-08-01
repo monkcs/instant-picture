@@ -26,8 +26,9 @@ To use the web component, a declaration as the following will produce a Polaroid
     <p slot=text>A ballon in the sky!</p>
 </instant-picture>
 ```
+Rendering of the `instant-picture`:
 
-![Rendered Polaroid i-type picture](example/example.png "Rendered Polaroid i-type picture")
+<img src=example/example.png alt="Rendered Polaroid i-type picture" width=400>
 
 ## Styling 
 To style the web component and its children, following selectors can be used: 
@@ -56,7 +57,7 @@ instant-picture [slot=text] { }
 
 ## API
 
-Uppercase words defined by [RFC 8174](https://datatracker.ietf.org/doc/html/rfc8174).
+Uppercase words defined by [RFC 8174](https://datatracker.ietf.org/doc/html/rfc8174 "Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words").
 
 ### Type attribute
 
