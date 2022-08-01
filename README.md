@@ -27,6 +27,8 @@ To use the web component, a declaration as the following will produce a Polaroid
 </instant-picture>
 ```
 
+![Rendered Polaroid i-type picture](example/example.png "Rendered Polaroid i-type picture")
+
 ## Styling 
 To style the web component and its children, following selectors can be used: 
 
