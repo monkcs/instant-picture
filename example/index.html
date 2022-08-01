@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<!-- 
+    https://web.archive.org/web/20220712154612/https://instax.com/film/
+    https://web.archive.org/web/20220712162053/https://www.fontsquirrel.com/license/just-another-hand
+-->
+
+<head>
+    <meta charset=utf-8>
+    <title>Instant Picture</title>
+
+    <script type=module src="../instant-picture.mjs"></script>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        instant-picture {
+            height: 400px;
+        }
+
+        instant-picture[type=go] {
+            height: auto;
+            width: 252px;
+        }
+
+        instant-picture {
+            font-size: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <instant-picture type=i-type>
+        <img src=balloon.webp alt="Hot air balloon">
+        <p slot=text>Polaroid I-type</p>
+    </instant-picture>
+
+    <instant-picture type=go>
+        <img src=skyline.webp alt="Skyline at dusk">
+        <p slot=text>Polaroid go</p>
+    </instant-picture>
+
+    <instant-picture type=mini>
+        <img src=flamingo.webp alt="Flamingo">
+        <p slot=text>Instax mini</p>
+    </instant-picture>
+
+    <instant-picture type=square>
+        <img src=lighthouse.webp alt="Top of lighthouse">
+        <p slot=text>Instax square</p>
+    </instant-picture>
+
+    <instant-picture type=wide>
+        <img src=balloons.webp alt="Hot air balloons">
+        <p slot=text>Instax wide</p>
+    </instant-picture>
+</body>
+
+</html>
