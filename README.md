@@ -114,6 +114,9 @@ The child element representing the image SHOULD have the aspect ratio correspond
 * For `wide` aspect ratio 1:0.625
 
 ## Licenses
+
+Copyright [@monkcs](https://github.com/monkcs/)
+
 The instant-picture web component is licensed under the [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.html).
 
 The typeface [Just Another Hand](https://fonts.google.com/specimen/Just+Another+Hand) is licenced under the [Apache License, Version 2.0.](https://www.apache.org/licenses/LICENSE-2.0)

@@ -1,3 +1,5 @@
+/* Copyright https://github.com/monkcs/. Licensed under the GNU General Public License 3.0 */
+
 class InstantPicture extends HTMLElement
 {
     constructor()
