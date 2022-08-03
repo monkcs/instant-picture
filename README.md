@@ -89,7 +89,7 @@ The child element of `instant-picture` representing the image, MUST NOT have the
 
 ```html
 <instant-picture type=go>
-    <img src=ballon.webp alt="Hot air ballon">
+    <img src=balloon.webp alt="Hot air balloon">
 </instant-picture>
 ```
 
@@ -99,8 +99,8 @@ The child element of `instant-picture` representing the text, MUST have the attr
 
 ```html
 <instant-picture type=go>
-    <img src=ballon.webp alt="Hot air ballon">
-    <p slot=text>A ballon in the sky!</p>
+    <img src=balloon.webp alt="Hot air balloon">
+    <p slot=text>A balloon in the sky!</p>
 </instant-picture>
 ```
 
