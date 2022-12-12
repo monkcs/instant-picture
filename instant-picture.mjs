@@ -51,6 +51,7 @@ class InstantPicture extends HTMLElement
         
         ::slotted(:not([slot=text])) {
             width: 100%;
+            height: auto;
             border-radius: 1%;
 
             color: white;
