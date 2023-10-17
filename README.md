@@ -1,39 +1,59 @@
 # &lt;instant-picture&gt; Web Component
+
 A Web Component for displaying Polaroid and Instax instant pictures on the web!
 
 ![Different instant pictures](example/banner.png "Different instant pictures")
 
 ***Features***
-* A single javascript module file to include
+
+* A single javascript module file with styles and font included...
+* ...or a javascript module file that will pull styles and font via ```<link>``` to be CSP friendly
 * No dependencies
 * No external fetch requests
 * Bundled typeface [Just Another Hand](https://fonts.google.com/specimen/Just+Another+Hand)
 * Support for the common picture formats `i-type`, `sx-70`, `600`, `go`, `mini`, `square` and `wide`
 
 ***Two flavors***
-* `~69KB` with bundled typeface 
+
+* `~69KB` with bundled typeface
 * `~4.5KB` without bundled typeface
 
 ## Example
+
+***All-in-one version***
+
 To load the web component, include a declaration to the javascript module file:
 
 ```html
-<script type=module src=instant-picture.mjs></script>
+<script type=module src=bundled/instant-picture.style.font.mjs></script>
 ```
 
+***Link version***
+
+Or place the ```instant-picture``` directory in ```/custom-element```, where ```/custom-element``` are located in the web root:
+
+```html
+<script type=module src=instant-picture.style.font.mjs></script>
+```
+
+### Use
+
 To use the web component, a declaration as the following will produce a Polaroid i-type picture with text underneath the image:
+
 ```html
 <instant-picture type=i-type>
     <img src=balloon.webp alt="Hot air balloon">
     <p slot=text>A balloon in the sky!</p>
 </instant-picture>
 ```
+
 Rendering of the `instant-picture`:
 
 <img src=example/example.png alt="Rendered Polaroid i-type picture" width=400>
 
-## Styling 
-To style the web component and its children, following selectors can be used: 
+## Styling
+
+To style the web component and its children, following selectors can be used:
 
 ```css
 /* Declare styles directly to parent */
@@ -64,6 +84,7 @@ Uppercase words defined by [RFC 8174](https://datatracker.ietf.org/doc/html/rfc8
 ### Type attribute
 
 The element `instant-picture` MUST have the attribute `type` with one of the following values:
+
 * `i-type`
 * `sx-70`
 * `600`
@@ -75,7 +96,9 @@ The element `instant-picture` MUST have the attribute `type` with one of the fol
 ```html
 <instant-picture type=wide></instant-picture>
 ```
+
 ### Unstyled attribute
+
 The element `instant-picture` MAY have the boolean attribute `unstyled` to prevent default styling of the child element representing the image.
 
 ```html
@@ -83,6 +106,7 @@ The element `instant-picture` MAY have the boolean attribute `unstyled` to preve
 ```
 
 ### Child elements
+
 The element `instant-picture` SHOULD have a child element representing the image.
 
 The child element of `instant-picture` representing the image, MUST NOT have the attribute `slot` with a non-empty value.
@@ -109,6 +133,7 @@ It is RECOMMENDED that only one child element represent the image and one child 
 ### Image aspect ratio
 
 The child element representing the image SHOULD have the aspect ratio corresponding to the value of the attribute `type` specified on `instant-picture` as following:
+
 * For `i-type`, `sx-70`, `600`, `go`, `square` aspect ratio 1:1
 * For `mini` aspect ratio 1:1.35
 * For `wide` aspect ratio 1:0.625

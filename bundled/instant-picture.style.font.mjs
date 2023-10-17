@@ -1,9 +1,7 @@
 /* Copyright https://github.com/monkcs/. Licensed under the GNU General Public License 3.0 */
 
-class InstantPicture extends HTMLElement
-{
-    constructor()
-    {
+class InstantPicture extends HTMLElement {
+    constructor() {
         super();
         let shadow = this.attachShadow({ mode: 'open' });
 
@@ -16,8 +14,6 @@ class InstantPicture extends HTMLElement
             border-radius: 1%;
             margin: 0.4rem;
             font-family: 'Just Another Hand', cursive;
-        
-            transition: all 0.3s;
         }
         
         :host([type="i-type"]),
@@ -160,30 +156,24 @@ class InstantPicture extends HTMLElement
         shadow.appendChild(text);
     }
 
-    get unstyled()
-    {
+    get unstyled() {
         return this.hasAttribute("unstyled");
     }
 
-    set unstyled(value)
-    {
-        if (value == true)
-        {
+    set unstyled(value) {
+        if (value == true) {
             this.setAttribute("unstyled", "");
         }
-        else
-        {
+        else {
             this.removeAttribute("unstyled");
         }
     }
 
-    get type()
-    {
+    get type() {
         return this.getAttribute('type');
     }
 
-    set type(value)
-    {
+    set type(value) {
         this.setAttribute('type', value);
     }
 }
