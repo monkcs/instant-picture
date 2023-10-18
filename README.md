@@ -33,7 +33,7 @@ To load the web component, include a declaration to the javascript module file:
 Or place the ```instant-picture``` directory in ```/custom-element```, where ```/custom-element``` are located in the web root:
 
 ```html
-<script type=module src=instant-picture.style.font.mjs></script>
+<script type=module src=/custom-element/instant-picture/instant-picture.style.font.mjs></script>
 ```
 
 ### Use

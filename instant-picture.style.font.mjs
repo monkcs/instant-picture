@@ -11,12 +11,6 @@ class InstantPicture extends HTMLElement {
         style.type = "text/css";
         shadow.appendChild(style);
 
-        let font = document.createElement("link");
-        font.href = "/custom-element/instant-picture/font.css";
-        font.rel = "stylesheet";
-        font.type = "text/css";
-        shadow.appendChild(font);
-
         let image = document.createElement('slot');
         shadow.appendChild(image);
 
@@ -47,3 +41,9 @@ class InstantPicture extends HTMLElement {
     }
 }
 customElements.define('instant-picture', InstantPicture);
+
+let font = document.createElement("link");
+font.href = "/custom-element/instant-picture/font.css";
+font.rel = "stylesheet";
+font.type = "text/css";
+document.head.appendChild(font);
