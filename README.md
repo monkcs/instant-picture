@@ -6,8 +6,7 @@ A Web Component for displaying Polaroid and Instax instant pictures on the web!
 
 ***Features***
 
-* A single javascript module file with styles and font included...
-* ...or a javascript module file that will pull styles and font via ```<link>``` to be CSP friendly
+* A single javascript module file that will pull in style (and optionally font) via ```<link>``` to be CSP friendly
 * No dependencies
 * No external fetch requests
 * Bundled typeface [Just Another Hand](https://fonts.google.com/specimen/Just+Another+Hand)
@@ -20,20 +19,10 @@ A Web Component for displaying Polaroid and Instax instant pictures on the web!
 
 ## Example
 
-***All-in-one version***
-
-To load the web component, include a declaration to the javascript module file:
+To load the web component, include a declaration to the javascript module file. The `style.css` (and optionally `font.css` + `just-another-hand.woff2`) file need to be in the same directory:
 
 ```html
-<script type=module src=bundled/instant-picture.style.font.mjs></script>
-```
-
-***Link version***
-
-Or place the ```instant-picture``` directory in ```/custom-element```, where ```/custom-element``` are located in the web root:
-
-```html
-<script type=module src=/custom-element/instant-picture/instant-picture.style.font.mjs></script>
+<script type=module src=/instant-picture.style.font.mjs></script>
 ```
 
 ### Use
@@ -117,9 +106,7 @@ The child element of `instant-picture` representing the image, MUST NOT have the
 </instant-picture>
 ```
 
-The element `instant-picture` MAY have a child element representing the text.
-
-The child element of `instant-picture` representing the text, MUST have the attribute `slot` with the value `text`.
+The element `instant-picture` MAY have a child element representing the text. The child element of `instant-picture` representing the text, MUST have the attribute `slot` with the value `text`.
 
 ```html
 <instant-picture type=go>
