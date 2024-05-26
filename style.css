@@ -77,29 +77,29 @@ slot:not([name=text]) {
 :host([type="600"])>slot:not([name=text]),
 :host([type="sx-70"])>slot:not([name=text]),
 :host([type="go"])>slot:not([name=text]) {
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-block-start: 5%;
+    margin-inline-start: 5%;
     width: 90%;
     aspect-ratio: 1;
 }
 
 :host([type="mini"])>slot:not([name=text]) {
-    margin-top: 6%;
-    margin-left: 6%;
+    margin-block-start: 6%;
+    margin-inline-start: 6%;
     width: 88%;
     aspect-ratio: 0.74;
 }
 
 :host([type="square"])>slot:not([name=text]) {
-    margin-top: 9%;
-    margin-left: 6%;
+    margin-block-start: 9%;
+    margin-inline-start: 6%;
     width: 88%;
     aspect-ratio: 1;
 }
 
 :host([type="wide"])>slot:not([name=text]) {
-    margin-top: 6%;
-    margin-left: 4%;
+    margin-block-start: 6%;
+    margin-inline-start: 4%;
     width: 92%;
     aspect-ratio: 1.6;
 }
@@ -115,25 +115,25 @@ slot:not([name=text]) {
 :host([type="600"])> ::slotted([slot=text]),
 :host([type="sx-70"])> ::slotted([slot=text]),
 :host([type="go"])> ::slotted([slot=text]) {
-    margin-top: 2%;
-    margin-left: 5%;
+    margin-block-start: 2%;
+    margin-inline-start: 5%;
     width: 90%;
 }
 
 :host([type="mini"])> ::slotted([slot=text]) {
-    margin-top: 2%;
-    margin-left: 6%;
+    margin-block-start: 2%;
+    margin-inline-start: 6%;
     width: 88%;
 }
 
 :host([type="square"])> ::slotted([slot=text]) {
-    margin-top: 2%;
-    margin-left: 6%;
+    margin-block-start: 2%;
+    margin-inline-start: 6%;
     width: 88%;
 }
 
 :host([type="wide"])> ::slotted([slot=text]) {
-    margin-top: 2%;
-    margin-left: 4%;
+    margin-block-start: 2%;
+    margin-inline-start: 4%;
     width: 92%;
 }
